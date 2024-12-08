@@ -10,18 +10,17 @@
 
 */
 
+
 .page {
   min-inline-size: 320px;
   max-inline-size: 1440px;
   min-block-size: 100dvb;
   color: var(--text-color);
-  background-image: repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
-  repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
-  linear-gradient(#e7e7e7 0%, #1a1a1a 100%);
+  background-image: repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px), linear-gradient(#e7e7e7 0%, #1a1a1a 100%);
   background-size: 100%;
   background-attachment: fixed;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,14 +45,12 @@
 
 .header-title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  
 }
 
 .title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
   padding-block-start: 20px;
- 
 }
 
 .content {
@@ -68,15 +65,13 @@
   background-color: var(--accent-color);
   font-size: var(--text-size);
   border: var(--border);
-  padding-block-end:63px;
+  padding-block-end: 63px;
   position: relative;
-
- 
 }
 
 .section-title {
   font-size: var(--text-size);
-  font-variation-settings: 'wght' var(--title-weight);
+  font-variation-settings: "wght" var(--title-weight);
   padding: 5px 10px;
   line-height: 21px;
   font-family: var(--main-font) sans-serif;
@@ -84,8 +79,8 @@
 }
 
 .card-image {
-display: block;
-inline-size: 100%;
+  display: block;
+  inline-size: 100%;
 }
 
 .card-image_section {
@@ -104,10 +99,10 @@ inline-size: 100%;
   text-shadow: 0 0 2px var(--accent-color);
 }
 
-@supports((text-stroke: 1px var(--accent-color)) or (-webkit-text-stroke: 1px var(--accent-color))) {
+@supports ((text-stroke: 1px var(--accent-color)) or (-webkit-text-stroke: 1px var(--accent-color))) {
   .card-logo {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--accent-color);
+      text-shadow: none;
+      -webkit-text-stroke: 1px var(--accent-color);
   }
 }
 
@@ -163,10 +158,10 @@ inline-size: 100%;
 
 .button:hover::before {
   translate: 0%;
-  }
+}
 
 .button::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: var(--text-color);
@@ -174,7 +169,6 @@ inline-size: 100%;
   translate: -100%;
   border: var(--border);
 }
-
 
 .like-section {
   display: flex;
@@ -190,7 +184,7 @@ inline-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   position: relative;
   overflow: hidden;
   color: var(--text-color);
@@ -204,7 +198,6 @@ inline-size: 100%;
   position: relative;
   color: var(--accent-color);
   mix-blend-mode: difference;
- 
 }
 
 .like-icon {
@@ -228,20 +221,20 @@ inline-size: 100%;
   bottom: 5px;
 }
 
-.sepai{
+.sepai {
   filter: sepia(0.8);
 }
 
 .invert {
-  filter:invert(80%);
+  filter: invert(80%);
 }
 
 .saturate {
-  filter:saturate(390%) ;
+  filter: saturate(390%);
 }
 
 .hue-rotate {
-  filter:hue-rotate(100deg) blur(3px);
+  filter: hue-rotate(100deg) blur(3px);
 }
 
 .blur {
@@ -285,46 +278,44 @@ inline-size: 100%;
   overflow: hidden;
 }
 
- 
 @media (width >= 376px) {
   .header {
-    width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+      width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   }
-  
+
   /*.header-content {
-    padding: 128px 120px;
-  }*/
+  padding: 128px 120px;
+}*/
 
   .section {
-    width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+      width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   }
 
   .card-logo {
-    top: 25px;
-    right: 25px;
+      top: 25px;
+      right: 25px;
   }
 
   .button-popup {
-    flex-direction: row;
-    inline-size: 340px;
-    block-size: 55px;
-    justify-content: center;
-    gap: 7px;
+      flex-direction: row;
+      inline-size: 340px;
+      block-size: 55px;
+      justify-content: center;
+      gap: 7px;
   }
 
   .popup-icon {
-    max-width: 21px;
-}
+      max-width: 21px;
+  }
 
   .botton-text__footer {
-  bottom: 0px;
+      bottom: 0px;
+  }
+  .dialog[open] {
+      padding-inline: 30px;
+  }
 
-}
-.dialog[open] {
-  padding-inline: 30px;
-}
-
-.glagol-button {
-  width: 293px;
-}
+  .glagol-button {
+      width: 293px;
+  }
 }
