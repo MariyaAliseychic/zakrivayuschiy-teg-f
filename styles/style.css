@@ -109,10 +109,8 @@
   border-top: var(--border);
   position: relative;
   padding: 25px;
-}
-
-.text_quote {
-  margin-top: 27px;
+  display: grid;
+  gap: 27px;
 }
 
 .card__like-button {
@@ -210,6 +208,8 @@
   border: transparent;
   max-height: 34px;
   cursor: pointer;
+  max-width: 47px;
+  margin-inline-end: 5px;
 }
 
 .card__icon-button:focus-visible {
@@ -266,7 +266,7 @@
 }
 
 .dialog::backdrop {
-  backdrop-filter: blur(7px);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .dialog-button {
